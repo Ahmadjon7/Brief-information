@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(rgba(15, 15, 45, 0.2),rgba(15, 15, 45, 0.4)), url(../image/city-7358078_1920.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+.hiddin{
+    display: none;
+}
+.btn{
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 20px;
+    color: #fafafa;
+    cursor:pointer;
+}
+.show-btn{
+    background-color:rgba(30, 30, 94, 0.514);
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.5s;
+}
+.show-btn:hover{
+    background-color: rgba(49, 49, 178, 0.514);
+}
+.modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(205, 205, 225, 0.315);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+}
+.modal-header{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+
+}
+.close-btn{
+    color: #222;
+    font-size: 20px;
+}
+.modal-title{
+    margin-bottom: 15px;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(27, 23, 74, 0.399);
+    backdrop-filter: blur(4px);
+}
+.modal-text{
+    line-height: 20px;
+}
